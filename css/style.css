@@ -27,6 +27,23 @@ img {
 	line-height:0;
 	visibility:hidden;
 }
+
+/* Style for the hover text */
+.hover-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+}
+
+/* Show text on hover */
+li:hover .hover-text {
+    display: block; /* Make text visible on hover */
+}
+
+
 /*------------------------------ HEADER ------------------------------*/
 .btn1, .btn2, .btn3, #newsletter input {
 	background: url(../images/interface.png) no-repeat;
