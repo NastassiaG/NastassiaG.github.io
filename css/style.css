@@ -626,3 +626,33 @@ li:hover .hover-text {
 	width: 460px;
 	margin-right: 10px;
 }
+
+/* Highlight layout fix */
+.list li {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Image styling */
+.list li img {
+  width: 220px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Wrap text content if needed */
+.list li .text {
+  flex: 1;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 700px) {
+  .list li {
+    flex-direction: column;
+  }
+
+  .list li img {
+    width: 100%;
+  }
+}
